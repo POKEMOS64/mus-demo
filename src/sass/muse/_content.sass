@@ -43,3 +43,39 @@
           font:
             size: .75rem
           color: #b71c1c
+  &__lenta
+    .h3
+      @extend .margin-min
+    .ele
+      @extend %padding-min
+      &:first-child
+        @extend .blue.darken-3
+        @extend .white-text
+      &:nth-child(2n)
+        @extend .green.darken-4
+        @extend .white-text
+      &:last-child
+        @extend .teal
+        @extend .white-text
+    &__img
+      padding: 10px !important
+      border: 1px solid #666
+      img
+        width: 100%
+        margin: 0px
+    &__info-block
+      .h2
+        @extend .red-text.text-darken-4
+        font:
+          family: $CI
+      .data
+        font:
+          size: .6rem
+        i
+          @extend %rel
+          top: .3rem
+          margin-right: .5rem
+      .text
+        font:
+          size: .9rem
+          family: $PR

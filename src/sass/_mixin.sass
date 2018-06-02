@@ -5,7 +5,6 @@
 //transition: {$obb} 1s, -webkit-transform 1s
 
 
-
 /*Разметка для колонок*/
 .color_bag
 	position: fixed
@@ -42,9 +41,19 @@
 		&:hover
 			background: rgba(4, 4, 4, 0.58)
 
-.margin-min
+//Примеси
+%rel
+	position: relative
+%margin-min
 	margin: 1.8rem auto .5rem
+%padding-min
+	padding: 1.3rem .5rem
 
+.margin-min
+	@extend %margin-min
+.padding-min
+	@extend %padding-min
+//Примеси
 .line-in
 	a
 		border-bottom: 1px solid #666
@@ -55,3 +64,35 @@
 	flex-direction: row
 	justify-content: center
 	flex-wrap: wrap
+
+$width: 1200px
+$column: $width/12
+
+//.container
+	width: 8*$column
+
+input
+	&::-webkit-input-placeholder
+	&::-moz-placeholder
+	&:-ms-input-placeholder
+
+@mixin anim_opacity
+	-webkit-transition: opacity 1s ease-in
+  -moz-transition: opacity 1s ease-in
+  transition: opacity 1s ease-in
+
+.ele:hover
+	cursor: default
+	opacity: .8
+	@include anim_opacity
+.btn
+	@extend .red
+	@extend .waves-effect
+	&:hover
+		opacity: .8
+		@include anim_opacity
+
+.fix
+	&::before
+		@include triangle("up", 2rem, 1rem, #b25c9c)
+		content: ""

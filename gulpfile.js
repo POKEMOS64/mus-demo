@@ -11,10 +11,11 @@ var gulp = require('gulp'),
 		cache =require('gulp-cache'),
 		autoprefixer =require('gulp-autoprefixer'),
 		livereload = require('gulp-livereload'),
-		compass = require('gulp-compass');
-		
-		
-		
+		compass = require('gulp-compass'),
+		bourbon = require('bourbon');
+
+
+
 gulp.task('compass', function(){
 	return gulp.src('src/sass/compass/*.scss')
 		.pipe(compass({
@@ -28,8 +29,10 @@ gulp.task('compass', function(){
 });
 
 gulp.task('sass',function(){
-	return gulp.src('src/sass/*.sass')
-		.pipe(sass().on('error', sass.logError))
+	return gulp.src(['src/sass/*.sass','src/scss/*.scss'])
+		.pipe(sass({
+			includePaths: require('bourbon').includePaths
+		}).on('error', sass.logError))
 		.pipe(autoprefixer(['Last 10 versions', '>1%', 'ie 8'], {cascade:true}))
 		.pipe(gulp.dest('src/css'))
 		.pipe(browserSync.reload({stream:true}))
@@ -76,13 +79,13 @@ gulp.task('img', function(){
 });
 
 gulp.task("watch", ['browser-sync', 'sass', 'scripts'], function(){
-	gulp.watch(['src/sass/**/*.sass','src/sass/susy/*.scss'], ['sass']);
+	gulp.watch(['src/sass/**/*.sass','src/sass/**/*.scss'], ['sass']);
 	gulp.watch('src/*.html', browserSync.reload);
 	gulp.watch('src/js/**/*.js', browserSync.reload);
 });
 
 gulp.task('build', ['clean', 'img', 'scripts', 'css-libs'], function(){
-	
+
 	var buildCss = gulp.src(['src/css/**/*.css'])
 		.pipe(gulp.dest('dist/css'));
 	var buildFonts = gulp.src('src/fonts/**/*')
