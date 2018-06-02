@@ -1,0 +1,57 @@
+=bg($img, $for: png)
+	background-image: url('../img/#{$img}.#{$for}')
+
+
+//transition: {$obb} 1s, -webkit-transform 1s
+
+
+
+/*Разметка для колонок*/
+.color_bag
+	position: fixed
+	z-index: 98
+	width: 100%
+	.container
+		width: 100% !important
+		max-width: 1200px
+		.row
+			padding: 0
+			margin: 0
+	.col.s1
+		height: 10px
+/*Разметка для колонок*/
+
+.img-classic
+	width: auto
+
+.owl-nav
+	position: absolute
+	bottom: 0
+	width: 100%
+	top: 0
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: space-between
+	&>div
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		align-items: center
+		transition: background 1s, -webkit-transform 1s
+		&:hover
+			background: rgba(4, 4, 4, 0.58)
+
+.margin-min
+	margin: 1.8rem auto .5rem
+
+.line-in
+	a
+		border-bottom: 1px solid #666
+%f-row
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: row
+	justify-content: center
+	flex-wrap: wrap

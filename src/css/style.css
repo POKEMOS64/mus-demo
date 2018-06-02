@@ -1,0 +1,904 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Regular.eot");
+  src: local("Circe"), local("Circe-Regular"), url("../fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-ExtraLight.eot");
+  src: local("Circe ExtraLight"), local("Circe-ExtraLight"), url("../fonts/Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-ExtraLight.woff") format("woff"), url("../fonts/Circe-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Thin.eot");
+  src: local("Circe Thin"), local("Circe-Thin"), url("../fonts/Circe-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Thin.woff") format("woff"), url("../fonts/Circe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Light.eot");
+  src: local("Circe Light"), local("Circe-Light"), url("../fonts/Circe-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Light.woff") format("woff"), url("../fonts/Circe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Bold.eot");
+  src: local("Circe Bold"), local("Circe-Bold"), url("../fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Bold.woff") format("woff"), url("../fonts/Circe-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-ExtraBold.eot");
+  src: local("Circe ExtraBold"), local("Circe-ExtraBold"), url("../fonts/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-ExtraBold.woff") format("woff"), url("../fonts/Circe-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaCond-LightIt.eot");
+  src: local("Proxima Nova Condensed Light Italic"), local("ProximaNovaCond-LightIt"), url("../fonts/ProximaNovaCond-LightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-LightIt.woff") format("woff"), url("../fonts/ProximaNovaCond-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaCond-Regular.eot");
+  src: local("Proxima Nova Condensed Regular"), local("ProximaNovaCond-Regular"), url("../fonts/ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Regular.woff") format("woff"), url("../fonts/ProximaNovaCond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNova-Extrabld.eot");
+  src: local("Proxima Nova Extrabold"), local("ProximaNova-Extrabld"), url("../fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaCond-Black.eot");
+  src: local("Proxima Nova Condensed Black"), local("ProximaNovaCond-Black"), url("../fonts/ProximaNovaCond-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Black.woff") format("woff"), url("../fonts/ProximaNovaCond-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaExCn-Thin.eot");
+  src: local("Proxima Nova Extra Condensed Thin"), local("ProximaNovaExCn-Thin"), url("../fonts/ProximaNovaExCn-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Thin.woff") format("woff"), url("../fonts/ProximaNovaExCn-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaExCn-ThinIt.eot");
+  src: local("Proxima Nova Extra Condensed Thin Italic"), local("ProximaNovaExCn-ThinIt"), url("../fonts/ProximaNovaExCn-ThinIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-ThinIt.woff") format("woff"), url("../fonts/ProximaNovaExCn-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNova-RegularIt.eot");
+  src: local("Proxima Nova Regular Italic"), local("ProximaNova-RegularIt"), url("../fonts/ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-RegularIt.woff") format("woff"), url("../fonts/ProximaNova-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaExCn-Bold.eot");
+  src: local("Proxima Nova Extra Condensed Bold"), local("ProximaNovaExCn-Bold"), url("../fonts/ProximaNovaExCn-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Bold.woff") format("woff"), url("../fonts/ProximaNovaExCn-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaT-Thin.eot");
+  src: local("Proxima Nova Thin"), local("ProximaNovaT-Thin"), url("../fonts/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNovaT-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNova-BoldIt.eot");
+  src: local("Proxima Nova Bold Italic"), local("ProximaNova-BoldIt"), url("../fonts/ProximaNova-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-BoldIt.woff") format("woff"), url("../fonts/ProximaNova-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaCond-Bold.eot");
+  src: local("Proxima Nova Condensed Bold"), local("ProximaNovaCond-Bold"), url("../fonts/ProximaNovaCond-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Bold.woff") format("woff"), url("../fonts/ProximaNovaCond-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaExCn-Black.eot");
+  src: local("Proxima Nova Extra Condensed Black"), local("ProximaNovaExCn-Black"), url("../fonts/ProximaNovaExCn-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Black.woff") format("woff"), url("../fonts/ProximaNovaExCn-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima';
+  src: url("../fonts/ProximaNovaExCn-RegularIt.eot");
+  src: local("Proxima Nova Extra Condensed Regular Italic"), local("ProximaNovaExCn-RegularIt"), url("../fonts/ProximaNovaExCn-RegularIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-RegularIt.woff") format("woff"), url("../fonts/ProximaNovaExCn-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../fonts/Acrom-Regular.eot");
+  src: local("Acrom Regular"), local("Acrom-Regular"), url("../fonts/Acrom-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom-Regular.woff") format("woff"), url("../fonts/Acrom-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../fonts/Acrom-Bold.eot");
+  src: local("Acrom Bold"), local("Acrom-Bold"), url("../fonts/Acrom-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom-Bold.woff") format("woff"), url("../fonts/Acrom-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../fonts/Acrom-Thin.eot");
+  src: local("Acrom Thin"), local("Acrom-Thin"), url("../fonts/Acrom-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom-Thin.woff") format("woff"), url("../fonts/Acrom-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../fonts/Acrom-Light.eot");
+  src: local("Acrom Light"), local("Acrom-Light"), url("../fonts/Acrom-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom-Light.woff") format("woff"), url("../fonts/Acrom-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../fonts/Acrom-ExtraBold.eot");
+  src: local("Acrom ExtraBold"), local("Acrom-ExtraBold"), url("../fonts/Acrom-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom-ExtraBold.woff") format("woff"), url("../fonts/Acrom-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../fonts/Acrom-Medium.eot");
+  src: local("Acrom Medium"), local("Acrom-Medium"), url("../fonts/Acrom-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom-Medium.woff") format("woff"), url("../fonts/Acrom-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+/*********************/
+/*mixin*/
+/*Разметка для колонок*/
+.color_bag {
+  position: fixed;
+  z-index: 98;
+  width: 100%; }
+  .color_bag .container {
+    width: 100% !important;
+    max-width: 1200px; }
+    .color_bag .container .row {
+      padding: 0;
+      margin: 0; }
+  .color_bag .col.s1 {
+    height: 10px; }
+
+/*Разметка для колонок*/
+.img-classic {
+  width: auto; }
+
+.owl-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  top: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .owl-nav > div {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    transition: background 1s, -webkit-transform 1s; }
+    .owl-nav > div:hover {
+      background: rgba(4, 4, 4, 0.58); }
+
+.margin-min {
+  margin: 1.8rem auto .5rem; }
+
+.line-in a {
+  border-bottom: 1px solid #666; }
+
+/*mixin*/
+/*********************/
+/*База*/
+html {
+  font-size: 20px; }
+  @media (max-width: 480px) {
+    html {
+      font-size: 13px; } }
+
+body {
+  background: #fafbfd;
+  font-family: "Circe"; }
+
+.container {
+  overflow: hidden;
+  width: 100% !important;
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media (max-width: 960px) {
+    .container {
+      width: 98%;
+      padding: 0 2%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; } }
+
+img,
+iframe {
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+/*Обязательный параметр!!!!!!!!*/
+a {
+  color: #000000; }
+
+h1 {
+  font-size: 3.157em; }
+
+h2 {
+  font-size: 2.369em; }
+
+h3 {
+  font-size: 1.777em; }
+
+p {
+  font-size: 1em; }
+
+.h1 {
+  font-size: 1.777em; }
+
+.h2 {
+  font-size: 1.1em;
+  font-family: "Proxima";
+  font-weight: 300; }
+
+.h3 {
+  position: relative;
+  font-size: 1.333rem;
+  font-family: "Proxima";
+  font-weight: 400;
+  border-bottom: 1px solid #e0e0e0; }
+  .h3::after {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #b71c1c; }
+  .h3:hover::after {
+    width: 100%;
+    left: auto;
+    right: 0; }
+
+.event__text ul li {
+  margin-left: 15px; }
+  .event__text ul li i {
+    position: relative;
+    top: 5px;
+    margin-right: 5px; }
+
+/*База*/
+.flip-clock-wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }
+  .flip-clock-wrapper * {
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flip-clock-wrapper a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ccc; }
+    .flip-clock-wrapper a:hover {
+      color: #fff; }
+  .flip-clock-wrapper ul {
+    list-style: none; }
+  .flip-clock-wrapper.clearfix {
+    *zoom: 1; }
+    .flip-clock-wrapper.clearfix:before {
+      content: " ";
+      display: table; }
+    .flip-clock-wrapper.clearfix:after {
+      content: " ";
+      display: table;
+      clear: both; }
+
+/* Main */
+.flip-clock-meridium {
+  background: none !important;
+  -webkit-box-shadow: 0 0 0 !important;
+          box-shadow: 0 0 0 !important;
+  font-size: 36px !important; }
+  .flip-clock-meridium a {
+    color: #313333; }
+
+.flip-clock-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 1em; }
+  .flip-clock-wrapper:before {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  .flip-clock-wrapper:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+    clear: both; }
+  .flip-clock-wrapper ul {
+    position: relative;
+    float: left;
+    margin: 5px;
+    width: 60px;
+    height: 90px;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 87px;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    background: #000; }
+    .flip-clock-wrapper ul li {
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 87px;
+      text-decoration: none !important; }
+      .flip-clock-wrapper ul li:first-child {
+        z-index: 2; }
+      .flip-clock-wrapper ul li a {
+        display: block;
+        height: 100%;
+        -webkit-perspective: 200px;
+        perspective: 200px;
+        margin: 0 !important;
+        overflow: visible !important;
+        cursor: default !important; }
+        .flip-clock-wrapper ul li a div {
+          z-index: 1;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 50%;
+          font-size: 80px;
+          overflow: hidden;
+          outline: 1px solid transparent; }
+          .flip-clock-wrapper ul li a div .shadow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2; }
+          .flip-clock-wrapper ul li a div.up {
+            -webkit-transform-origin: 50% 100%;
+            -ms-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+            top: 0; }
+            .flip-clock-wrapper ul li a div.up:after {
+              content: "";
+              position: absolute;
+              top: 44px;
+              left: 0;
+              z-index: 5;
+              width: 100%;
+              height: 3px;
+              background-color: #000;
+              background-color: rgba(0, 0, 0, 0.4); }
+          .flip-clock-wrapper ul li a div.down {
+            -webkit-transform-origin: 50% 0;
+            -ms-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            bottom: 0;
+            -webkit-border-bottom-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+            -webkit-border-bottom-right-radius: 6px;
+                    border-bottom-right-radius: 6px; }
+          .flip-clock-wrapper ul li a div div.inn {
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 200%;
+            color: #ccc;
+            text-shadow: 0 1px 2px #000;
+            text-align: center;
+            background-color: #333;
+            -webkit-border-radius: 6px;
+                    border-radius: 6px;
+            font-size: 70px; }
+          .flip-clock-wrapper ul li a div.up div.inn {
+            top: 0; }
+          .flip-clock-wrapper ul li a div.down div.inn {
+            bottom: 0; }
+    .flip-clock-wrapper ul.play li.flip-clock-before {
+      z-index: 3; }
+  .flip-clock-wrapper .flip {
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+  .flip-clock-wrapper ul.play li.flip-clock-active {
+    -webkit-animation: asd 0.5s 0.5s linear both;
+    animation: asd 0.5s 0.5s linear both;
+    z-index: 5; }
+
+/* Skeleton */
+/* PLAY */
+.flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 100px; }
+  .flip-clock-divider:first-child {
+    width: 0; }
+
+.flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  left: 5px; }
+
+.flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.5em;
+  right: -86px;
+  color: black;
+  text-shadow: none; }
+
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -88px; }
+
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -91px; }
+
+.flip-clock-dot.top {
+  top: 30px; }
+
+.flip-clock-dot.bottom {
+  bottom: 30px; }
+
+@-webkit-keyframes asd {
+  0% {
+    z-index: 2; }
+  20% {
+    z-index: 4; }
+  100% {
+    z-index: 4; } }
+
+@keyframes asd {
+  0% {
+    z-index: 2; }
+  20% {
+    z-index: 4; }
+  100% {
+    z-index: 4; } }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  -webkit-animation: turn 0.5s 0.5s linear both;
+  animation: turn 0.5s 0.5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  -webkit-animation: turn2 0.5s linear both;
+  animation: turn2 0.5s linear both; }
+
+.flip-clock-wrapper ul li.flip-clock-active {
+  z-index: 3; }
+
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.3s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.2s linear both; }
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(90deg); }
+  100% {
+    -webkit-transform: rotateX(0deg); } }
+
+@keyframes turn {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg); }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); } }
+
+@-webkit-keyframes turn2 {
+  0% {
+    -webkit-transform: rotateX(0deg); }
+  100% {
+    -webkit-transform: rotateX(-90deg); } }
+
+@keyframes turn2 {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); }
+  100% {
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg); } }
+
+/* SHADOW */
+/*DOWN */
+@-webkit-keyframes show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/************************/
+header .container > .row {
+  border-bottom: 1px solid #b71c1c;
+  margin-bottom: 0; }
+
+header .brend {
+  font-family: "Acrom";
+  font-size: 1.333em;
+  font-weight: 800;
+  color: #666; }
+  header .brend strong {
+    display: block; }
+
+header .contact a {
+  color: #666;
+  font-size: 0.75em; }
+  header .contact a i {
+    position: relative;
+    top: .3rem;
+    margin-right: .5rem; }
+
+nav .desctop-navi a.active {
+  background: #b71c1c; }
+
+nav .desctop-navi a:hover {
+  background: #b71c1c; }
+
+.owl-carousel img {
+  margin: 0 auto; }
+
+.content .row {
+  padding-top: 1rem; }
+
+.content .event .h3 {
+  margin-bottom: 2rem; }
+
+.content .event__img {
+  border: 1px solid #666;
+  padding: 5px; }
+  .content .event__img img {
+    margin: 0; }
+
+.content .event__text {
+  font-size: .9rem;
+  font-weight: 300; }
+  .content .event__text ul li {
+    font-family: "Acrom";
+    font-size: .8rem; }
+
+.content .event__calendar .ele {
+  margin: 0px auto; }
+  .content .event__calendar .ele .row {
+    margin: 0; }
+
+.content .event__calendar__data {
+  background: #b71c1c;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .content .event__calendar__data span {
+    width: 80%;
+    display: block;
+    margin: 1px auto;
+    border: 1px solid #fff; }
+
+.content .event__calendar__upcoming {
+  font-size: .75rem; }
+  .content .event__calendar__upcoming i {
+    font-size: .75rem;
+    color: #b71c1c; }
+
+/************************/
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+    .owl-carousel .owl-stage:after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-wrapper {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); }
+  .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+    .owl-carousel .owl-item img {
+      display: block;
+      width: 100%; }
+  .owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+    .owl-carousel.owl-rtl .owl-item {
+      float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*
+ * 	Owl Carousel - Auto Height Plugin */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-item img.owl-lazy {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 100ms ease;
+  transition: -webkit-transform 100ms ease;
+  -o-transition: transform 100ms ease;
+  transition: transform 100ms ease;
+  transition: transform 100ms ease, -webkit-transform 100ms ease; }
+  .owl-carousel .owl-video-play-icon:hover {
+    -ms-transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3); }
+
+.owl-carousel .owl-video-playing .owl-video-tn, .owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
+
+/*
+ * 	Owl Carousel - Video Plugin */
