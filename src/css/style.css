@@ -59,85 +59,85 @@
 .materialize-red-text.text-darken-4 {
   color: #8b1014 !important; }
 
-.red, .btn, .btn-large, .btn-small {
+.red, .btn, .btn-large, .btn-small, .basement {
   background-color: #F44336 !important; }
 
 .red-text {
   color: #F44336 !important; }
 
-.red.lighten-5, .lighten-5.btn, .lighten-5.btn-large, .lighten-5.btn-small {
+.red.lighten-5, .lighten-5.btn, .lighten-5.btn-large, .lighten-5.btn-small, .lighten-5.basement {
   background-color: #FFEBEE !important; }
 
 .red-text.text-lighten-5 {
   color: #FFEBEE !important; }
 
-.red.lighten-4, .lighten-4.btn, .lighten-4.btn-large, .lighten-4.btn-small {
+.red.lighten-4, .lighten-4.btn, .lighten-4.btn-large, .lighten-4.btn-small, .lighten-4.basement {
   background-color: #FFCDD2 !important; }
 
 .red-text.text-lighten-4 {
   color: #FFCDD2 !important; }
 
-.red.lighten-3, .lighten-3.btn, .lighten-3.btn-large, .lighten-3.btn-small {
+.red.lighten-3, .lighten-3.btn, .lighten-3.btn-large, .lighten-3.btn-small, .lighten-3.basement {
   background-color: #EF9A9A !important; }
 
 .red-text.text-lighten-3 {
   color: #EF9A9A !important; }
 
-.red.lighten-2, .lighten-2.btn, .lighten-2.btn-large, .lighten-2.btn-small {
+.red.lighten-2, .lighten-2.btn, .lighten-2.btn-large, .lighten-2.btn-small, .lighten-2.basement {
   background-color: #E57373 !important; }
 
 .red-text.text-lighten-2 {
   color: #E57373 !important; }
 
-.red.lighten-1, .lighten-1.btn, .lighten-1.btn-large, .lighten-1.btn-small {
+.red.lighten-1, .lighten-1.btn, .lighten-1.btn-large, .lighten-1.btn-small, .lighten-1.basement {
   background-color: #EF5350 !important; }
 
 .red-text.text-lighten-1 {
   color: #EF5350 !important; }
 
-.red.darken-1, .darken-1.btn, .darken-1.btn-large, .darken-1.btn-small {
+.red.darken-1, .darken-1.btn, .darken-1.btn-large, .darken-1.btn-small, .darken-1.basement {
   background-color: #E53935 !important; }
 
 .red-text.text-darken-1 {
   color: #E53935 !important; }
 
-.red.darken-2, .darken-2.btn, .darken-2.btn-large, .darken-2.btn-small {
+.red.darken-2, .darken-2.btn, .darken-2.btn-large, .darken-2.btn-small, .darken-2.basement {
   background-color: #D32F2F !important; }
 
 .red-text.text-darken-2 {
   color: #D32F2F !important; }
 
-.red.darken-3, .darken-3.btn, .darken-3.btn-large, .darken-3.btn-small {
+.red.darken-3, .darken-3.btn, .darken-3.btn-large, .darken-3.btn-small, .darken-3.basement {
   background-color: #C62828 !important; }
 
 .red-text.text-darken-3 {
   color: #C62828 !important; }
 
-.red.darken-4, .darken-4.btn, .darken-4.btn-large, .darken-4.btn-small {
+.red.darken-4, .darken-4.btn, .darken-4.btn-large, .darken-4.btn-small, .darken-4.basement {
   background-color: #B71C1C !important; }
 
-.red-text.text-darken-4, .content__lenta__info-block .h2 {
+.red-text.text-darken-4, .content__lenta__info-block .h2, footer a {
   color: #B71C1C !important; }
 
-.red.accent-1, .accent-1.btn, .accent-1.btn-large, .accent-1.btn-small {
+.red.accent-1, .accent-1.btn, .accent-1.btn-large, .accent-1.btn-small, .accent-1.basement {
   background-color: #FF8A80 !important; }
 
 .red-text.text-accent-1 {
   color: #FF8A80 !important; }
 
-.red.accent-2, .accent-2.btn, .accent-2.btn-large, .accent-2.btn-small {
+.red.accent-2, .accent-2.btn, .accent-2.btn-large, .accent-2.btn-small, .accent-2.basement {
   background-color: #FF5252 !important; }
 
 .red-text.text-accent-2 {
   color: #FF5252 !important; }
 
-.red.accent-3, .accent-3.btn, .accent-3.btn-large, .accent-3.btn-small {
+.red.accent-3, .accent-3.btn, .accent-3.btn-large, .accent-3.btn-small, .accent-3.basement {
   background-color: #FF1744 !important; }
 
 .red-text.text-accent-3 {
   color: #FF1744 !important; }
 
-.red.accent-4, .accent-4.btn, .accent-4.btn-large, .accent-4.btn-small {
+.red.accent-4, .accent-4.btn, .accent-4.btn-large, .accent-4.btn-small, .accent-4.basement {
   background-color: #D50000 !important; }
 
 .red-text.text-accent-4 {
@@ -1592,7 +1592,7 @@
 .white {
   background-color: #FFFFFF !important; }
 
-.white-text, .content__lenta .ele:first-child, .content__lenta .ele:nth-child(2n), .content__lenta .ele:last-child {
+.white-text, .content__lenta .ele:first-child, .content__lenta .ele:nth-child(2n), .content__lenta .ele:last-child, .basement {
   color: #FFFFFF !important; }
 
 .transparent {
@@ -7854,18 +7854,30 @@ nav .desctop-navi a:hover {
     width: 100%;
     margin: 0px; }
 
-.content__lenta__info-block .h2 {
-  font-family: "Circe"; }
+.content__lenta__info-block {
+  margin-bottom: 1rem; }
+  .content__lenta__info-block .h2 {
+    font-family: "Circe"; }
+  .content__lenta__info-block .data {
+    font-size: .6rem; }
+    .content__lenta__info-block .data i {
+      top: .3rem;
+      margin-right: .5rem; }
+  .content__lenta__info-block .text {
+    font-size: .9rem;
+    font-family: "Proxima"; }
 
-.content__lenta__info-block .data {
-  font-size: .6rem; }
-  .content__lenta__info-block .data i {
-    top: .3rem;
-    margin-right: .5rem; }
+.basement h2 {
+  text-align: center; }
 
-.content__lenta__info-block .text {
-  font-size: .9rem;
-  font-family: "Proxima"; }
+.basement a {
+  color: #fff;
+  padding: 5px 1rem !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+footer {
+  padding: 4rem 0; }
 
 /************************/
 .owl-carousel {

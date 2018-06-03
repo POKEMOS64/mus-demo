@@ -46,7 +46,6 @@ $('.owl-carousel.index-slide').owlCarousel({
 });
 
 $(document).ready(function(){
-    $('.dropdown-trigger').dropdown();
 		$('.sidenav').sidenav();
 		$('.tabs').tabs();
 		$('.modal').modal({
@@ -83,6 +82,17 @@ jQuery(document).ready(function($) {
  $(document).ready(function(){
    var ii = '<i class="material-icons tiny">check</i>'
    $('.event__text ul li').prepend(ii);
+
+   //Видео линк замещение
+   $('a.videolink').click(function(){
+     var vl = $(this).attr('dataTarget');
+     var linkUp = 'https://www.youtube.com/embed/'
+     var theEndEvent = '?rel=0&amp;controls=0&amp;showinfo=0'
+     var exitVideo = linkUp + vl + theEndEvent
+     $('.video_fraps').attr('src',exitVideo);
+     console.log(exitVideo);
+   });
+   //Ведео линк замещение
  });
 
 
@@ -90,7 +100,7 @@ jQuery(document).ready(function($) {
 
        $('a.videolink').click(function(){
          var vl = $(this).attr('href');
-         $('.atrrVideo').attr('src', vl);
+         $('.video_fraps').attr('src', vl);
          console.log(vl);
        });
 
