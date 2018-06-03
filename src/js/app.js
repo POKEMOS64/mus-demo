@@ -9,7 +9,7 @@ $(function(){
   }
 });
 
-$('.owl-carousel.otz').owlCarousel({
+$('.owl-carousel.chronology').owlCarousel({
     loop:true,
     autoplayTimeout:5000,
     autoplay:true,
@@ -17,17 +17,17 @@ $('.owl-carousel.otz').owlCarousel({
     nav:true,
     responsive:{
         0:{
-            items:1
+            items:3
         },
         600:{
-            items:1
+            items:3
         },
         1000:{
-            items:1
+            items:5
         }
     }
 });
-$('.owl-carousel.index-slide').owlCarousel({
+$('.owl-carousel.index-slide,.owl-carousel.slider-widget').owlCarousel({
     loop:false,
     margin:0,
     nav:true,
@@ -92,7 +92,16 @@ jQuery(document).ready(function($) {
      $('.video_fraps').attr('src',exitVideo);
      console.log(exitVideo);
    });
-   //Ведео линк замещение
+   //Видео линк замещение
+   //Gallery
+   $('.pufUp').click(function(){
+     var puf = $(this).attr('datapic');
+     $('.low_link_pic').attr('href',puf);
+     $('.lowpic').attr('src',puf);
+     console.log(puf);
+   });
+   //Gallery
+
  });
 
 
